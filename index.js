@@ -1,7 +1,7 @@
 var camel2hyphen = require('string-convert/camel2hyphen');
 
 var isDimension = function (feature) {
-  var re = /[height|width]$/;
+  var re = /(height|width)$/i;
   return re.test(feature);
 };
 
